@@ -23,25 +23,27 @@
     <header>
       <!-- Navigation on the page -->
 
-      <div class="container">
+      <div class="header-container container">
         <nav class="site-nav">
           <a class="link top-link" href="./index.html"
             >Web<span class="top-logo">Studio</span></a
           >
-          <ul class="list">
-            <li><a class="link" href="./index.html">Studio</a></li>
-            <li><a class="link" href="./portfolio.html">Portfolio</a></li>
-            <li><a class="link" href="">Contacts</a></li>
+          <ul class="list nav-list">
+            <li class="item"><a class="link" href="./index.html">Studio</a></li>
+            <li class="item">
+              <a class="link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="item"><a class="link" href="">Contacts</a></li>
           </ul>
         </nav>
         <address class="site-cont">
-          <ul class="list">
-            <li>
+          <ul class="list nav-list">
+            <li class="item">
               <a class="link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="item">
               <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
@@ -54,120 +56,152 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 hidden>Portfolio</h1>
+          <h1 class="visually-hidden">Portfolio</h1>
+
           <!-- Section button -->
 
-          <ul class="list">
-            <li><button class="button" type="button">All</button></li>
-            <li><button class="button" type="button">Web Site</button></li>
-            <li><button class="button" type="button">App</button></li>
-            <li><button class="button" type="button">Design</button></li>
-            <li><button class="button" type="button">Marketing</button></li>
-          </ul>
+          <div class="portfolio-btn">
+            <ul class="list portfolio-list">
+              <li class="portfolio-item">
+                <button class="button in-btn" type="button">All</button>
+              </li>
+              <li class="portfolio-item">
+                <button class="button in-btn" type="button">Web Site</button>
+              </li>
+              <li class="portfolio-item">
+                <button class="button in-btn" type="button">App</button>
+              </li>
+              <li class="portfolio-item">
+                <button class="button in-btn" type="button">Design</button>
+              </li>
+              <li class="portfolio-item">
+                <button class="button in-btn" type="button">Marketing</button>
+              </li>
+            </ul>
+          </div>
 
           <!-- Section Cards -->
 
-          <ul class="list card">
-            <li>
-              <a class="link" href="">
-                <img
-                  src="./images/app/bankingapp.jpg"
-                  alt="bankingapp"
-                  width="360"
-                />
-                <h2 class="section-title card-title">
-                  Banking App Interface Concept
-                </h2>
-                <p class="section-card">App</p>
-              </a>
-            </li>
-            <li>
-              <a class="link" href="">
-                <img
-                  src="./images/app/cashless.jpg"
-                  alt="cashlesspayment"
-                  width="360" />
-                <h2 class="section-title card-title">Cashless Payment</h2>
-                <p class="section-card">Marketing</p>
-                <p class="section-card"></p
-              ></a>
-            </li>
-            <li>
-              <a class="link" href="">
-                <img
-                  src="./images/app/meditationapp.jpg"
-                  alt="meditationapp"
-                  width="360"
-                />
-                <h2 class="section-title card-title">Meditation App</h2>
-                <p class="section-card">App</p>
-              </a>
-            </li>
-            <li>
-              <a class="link" href="">
-                <img
-                  src="./images/app/taxiservice.jpg"
-                  alt="taxiservice"
-                  width="360"
-                />
-                <h2 class="section-title card-title">Taxi Service</h2>
-                <p class="section-card">Marketing</p>
-              </a>
-            </li>
-            <li>
-              <a class="link" href="">
-                <img
-                  src="./images/app/screenillustration.jpg"
-                  alt="screenillustration"
-                  width="360"
-                />
-                <h2 class="section-title card-title">Screen Illustrations</h2>
-                <p class="section-card">Design</p>
-              </a>
-            </li>
-            <li>
-              <a class="link" href="">
-                <img
-                  src="./images/app/onlinecourses.jpg"
-                  alt="onlinecourses"
-                  width="360"
-                />
-                <h2 class="section-title card-title">Online Courses</h2>
-                <p class="section-card">Marketing</p>
-              </a>
-            </li>
-            <li>
-              <a class="link" href="">
-                <img
-                  src="./images/app/instagramstories.jpg"
-                  alt="instagramstories"
-                  width="360"
-                />
-                <h2 class="section-title card-title">
-                  Instagram Stories Concept
-                </h2>
-                <p class="section-card">Design</p>
-              </a>
-            </li>
-            <li>
-              <a class="link" href="">
-                <img
-                  src="./images/app/organicfood.jpg"
-                  alt="organicfood"
-                  width="360"
-                />
-                <h2 class="section-title card-title">Organic Food</h2>
-                <p class="section-card">Web Site</p>
-              </a>
-            </li>
-            <li>
-              <a class="link" href="">
-                <img src="./images/app/coffee.jpg" alt="coffee" width="360" />
-                <h2 class="section-title card-title">Fresh Coffee</h2>
-                <p class="section-card">Web Site</p>
-              </a>
-            </li>
-          </ul>
+<div class="card-wrapper">
+            <ul class="list card-list">
+              <li>
+                <a class="link" href="">
+                  <img
+                    src="./images/app/bankingapp.jpg"
+                    alt="bankingapp"
+                    width="360"
+                  />
+                      <div class="card-subtitle">
+                        <h2 class="section-title card-title">
+                        Banking App Interface Concept</h2>
+                        <p class="section-card">App</p>
+                      </div>
+                </a>
+              </li>
+              <li>
+                <a class="link" href="">
+                  <img
+                    src="./images/app/cashless.jpg"
+                    alt="cashlesspayment"
+                    width="360"
+                  />
+                    <div class="card-subtitle">
+                      <h2 class="section-title card-title">Cashless Payment</h2>
+                      <p class="section-card">Marketing</p>
+                    </div>
+                </a>
+              </li>
+              <li>
+                <a class="link" href="">
+                  <img
+                    src="./images/app/meditationapp.jpg"
+                    alt="meditationapp"
+                    width="360"
+                  />
+                  <div class="card-subtitle">
+                    <h2 class="section-title card-title">Meditation App</h2>
+                    <p class="section-card">App</p>
+                  </div class="card-subtitle">
+                </a>
+              </li>
+              <li>
+                <a class="link" href="">
+                  <img
+                    src="./images/app/taxiservice.jpg"
+                    alt="taxiservice"
+                    width="360"
+                  />
+                  <div class="card-subtitle">
+                    <h2 class="section-title card-title">Taxi Service</h2>
+                    <p class="section-card">Marketing</p>
+                  </div class="card-subtitle">
+                </a>
+              </li>
+              <li>
+                <a class="link" href="">
+                  <img
+                    src="./images/app/screenillustration.jpg"
+                    alt="screenillustration"
+                    width="360"
+                  />
+                  <div class="card-subtitle">
+                    <h2 class="section-title card-title">Screen Illustrations</h2>
+                    <p class="section-card">Design</p>
+                  </div class="card-subtitle">
+                </a>
+              </li>
+              <li>
+                <a class="link" href="">
+                  <img
+                    src="./images/app/onlinecourses.jpg"
+                    alt="onlinecourses"
+                    width="360"
+                  />
+                  <div class="card-subtitle">
+                    <h2 class="section-title card-title">Online Courses</h2>
+                    <p class="section-card">Marketing</p>
+                  </div class="card-subtitle">
+                </a>
+              </li>
+              <li>
+                <a class="link" href="">
+                  <img
+                    src="./images/app/instagramstories.jpg"
+                    alt="instagramstories"
+                    width="360"
+                  />
+                  <div class="card-subtitle">
+                    <h2 class="section-title card-title">
+                      Instagram Stories Concept
+                    </h2>
+                    <p class="section-card">Design</p>
+                  </div class="card-subtitle">
+                </a>
+              </li>
+              <li>
+                <a class="link" href="">
+                  <img
+                    src="./images/app/organicfood.jpg"
+                    alt="organicfood"
+                    width="360"
+                  />
+                  <div class="card-subtitle">
+                    <h2 class="section-title card-title">Organic Food</h2>
+                    <p class="section-card">Web Site</p>
+                  </div class="card-subtitle">
+                </a>
+              </li>
+              <li>
+                <a class="link" href="">
+                  <img src="./images/app/coffee.jpg" alt="coffee" width="360" />
+                  <div class="card-subtitle">
+                    <h2 class="section-title card-title">Fresh Coffee</h2>
+                    <p class="section-card">Web Site</p>
+                  </div class="card-subtitle">
+                </a>
+              </li>
+            </ul>
+</div>
         </div>
       </section>
     </main>
@@ -175,14 +209,16 @@
     <!-- Footer -->
 
     <footer class="footer">
-      <div class="container">
-        <a class="link" href="./index.html"
-          >Web<span class="under-logo">Studio</span></a
-        >
-        <p class="slogan">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
+      <div class="container footer-main">
+        <div class="footer-item">
+          <a class="link" href="./index.html"
+            >Web<span class="under-logo">Studio</span></a
+          >
+          <p class="slogan">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
       </div>
     </footer>
   </body>
