@@ -441,5 +441,8 @@ border-bottom: 1px solid var(--accent-color);
   border: 1px solid var(--accent-color);
   border-top: none;
   padding: 32px 16px;
+  }
+
+.card-title {
   margin-bottom: 8px;
 }
