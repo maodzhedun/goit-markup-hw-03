@@ -251,9 +251,9 @@ border-bottom: 1px solid var(--accent-color);
   margin-bottom: 8px;
 }
 
-.feature-items {
-  display: block;
-}
+/* .feature-items { */
+  /* display: block; */
+/* } */
 
 /* Section  What are we doing  */
 
