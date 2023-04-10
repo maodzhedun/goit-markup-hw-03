@@ -314,6 +314,7 @@ border-bottom: 1px solid var(--accent-color);
   color: var(--primary-brand-color);
   background-color: var(--light-bg-color);
 }
+
 /* action filter */
 
 .button:hover,
@@ -342,7 +343,6 @@ border-bottom: 1px solid var(--accent-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  /* text-align: center; */
   letter-spacing: 0.02em;
   color: var(--body-text-color);
 }
@@ -381,13 +381,8 @@ border-bottom: 1px solid var(--accent-color);
   margin-bottom: 16px;
 }
 
-.footer-logo {
-  /* margin-bottom: 16px; */
-}
-
 .slogan {
   max-width: 264px;
-  /* margin-top: 16px; */
   color: var(--light-bg-color);
 }
 
@@ -433,10 +428,6 @@ border-bottom: 1px solid var(--accent-color);
   row-gap: 48px;
 }
 
-/* .card-img { */
- /* margin-bottom: 32px; */
-/* } */
-
 .card-item {
   flex-basis: calc((100% - 48px) / 3);
   }
@@ -450,4 +441,5 @@ border-bottom: 1px solid var(--accent-color);
   border: 1px solid var(--accent-color);
   border-top: none;
   padding: 32px 16px;
+  margin-bottom: 8px;
 }
